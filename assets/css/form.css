@@ -1,0 +1,276 @@
+
+.form-wrapper {
+    /* background-color: #000; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.form {
+    
+    background-color: #15172b;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: auto;
+    padding: 20px;
+}
+
+.form .title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.form .subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.form .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+.form .trang {
+    color: #fff;
+}
+
+.form .ic1 {
+    margin-top: 30px;
+}
+
+.form .ic2 {
+    margin-top: 30px;
+}
+
+.form .input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+
+.form .cut {
+    background-color: #15172b;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+}
+
+.form .cut-short {
+    width: 50px;
+}
+
+.form .input:focus~ .cut,
+.form .input:not(:placeholder-shown)~ .cut {
+    transform: translateY(8px);
+}
+
+.form .placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+}
+
+.form .input:focus ~ .placeholder,
+.form .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.form .input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+}
+
+.form .input:focus ~ .placeholder {
+    color: #dc2f55;
+}
+
+.form label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Anh Minh Hoa Moi Toa */
+
+.form .toataulabel {
+    margin: 10px 0 10px;
+}
+
+.form .toatau-img {
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+
+}
+
+.white {
+    color: #fff;
+}
+
+.form .toatau-img {
+    text-align: center;
+}
+
+.form .toatau-img .toataualone {
+    width: 200px;
+}
+
+
+/* Chon Tau Select */
+.form .chontoa {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.form .input-container {
+    color: #fff;
+    
+    /* margin-bottom: ; */
+}
+
+.form select {
+    /* Reset Select */
+    appearance: none;
+    outline: 10px red;
+    box-shadow: none;
+    /* Personalize */
+    padding: 0 1em;
+    color: #fff;
+    /* background-color: ; */
+    background-image: none;
+    cursor: pointer;
+}
+  /* Remove IE arrow */
+select::-ms-expand {
+    display: none;
+}
+  /* Custom Select wrapper */
+.form .chontoa .select {
+    margin-top: 10px;
+    /* position: relative; */
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+  /* Arrow */
+.form .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #34495e;
+    transition: .25s all ease;
+    pointer-events: none;
+}
+  /* Transition */
+.form .select:hover::after {
+    color: #f39c12;
+}
+
+.form .submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.form .submit:active {
+    background-color: #06b;
+}
+
+  /* Desktop */
+@media (min-width: 1025px) {
+    
+} 
+
+  /* Pad */
+@media (min-width: 681px) and (max-width: 1024px) {
+
+    .form .toatau-img .toataualone {
+        width: 200px;
+    }
+
+    .form .toatau-img {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        justify-items: center;
+    }
+}
+
+  /* Phone */
+@media (max-width: 680px) {
+
+
+    .form .toatau-img .toataualone {
+        width: 150px;
+    }
+
+    .form .toatau-img {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        justify-items: center;
+    }
+}
+.input-hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+input[type=radio]:checked + label>img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 3px 3px #090;
+}
+
+/* Stuff after this is only to make things more pretty */
+input[type=radio] + label>img {
+    border: 1px dashed #444;
+    width: 150px;
+    height: 150px;
+    transition: 500ms all;
+}
+
+input[type=radio]:checked + label>img {
+    transform: 
+    rotateZ(-1deg) 
+    rotateX(1deg);
+}
