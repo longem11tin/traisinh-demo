@@ -15,7 +15,7 @@
   <meta property="og:image:height" content="1330">
   <meta property="og:site_name" content="Chuyến Tàu Thời Đại ">
   <meta property="og:type" content="Summercamp2023">
-  <meta property="og:description" content="Chuyến tàu thời đại, Summercamp 2023, ban cán sự đoàn Liên Bang Nga, bcsd lbn, bcsd, summercamp2023" data-react-helmet="true">
+  <meta property="og:description" content="Chuyến Tàu Thời Đại, Summercamp 2023, ban cán sự đoàn Liên Bang Nga, bcsd lbn, bcsd, summercamp2023" data-react-helmet="true">
   <meta name="description" content="Một hoạt động hội trại được tổ chức bởi Ban Cán sự Đoàn tại Liên Bang Nga mang tên Summer Camp 2023 - Chuyến Tàu Thời Đại">
 
   <meta property="fb:pages" content="summercamp2023">
@@ -36,24 +36,17 @@
   <!-- <meta name="description" content="Chuyến tàu thời đại, Summercamp 2023, ban cán sự đoàn Liên Bang Nga, bcsd lbn, bcsd, summercamp2023"> -->
 
   <!-- Favicons -->
-  <link href="assets/img/all/logo-plz-img.jpg" rel="icon">
+  <link href="assets/img/logo-plz-img.jpg" rel="icon">
 
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet"> 
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <!-- <link href="assets/css/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> -->
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/form.css" rel="stylesheet">
-  <link href="assets/css/count-down.css" rel="stylesheet"> 
-  <link href="form/style.css" rel="stylesheet">
-  <link href="assets/css/timeline.css" rel="stylesheet">
-  <link href="assets/css/flicker-button.css" rel="stylesheet">
-  <link href="assets/css/hinhanhhoitrai.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
   <style>
     /* body {font-family: Arial;} */
     
@@ -126,6 +119,16 @@
 
 
   </style>
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/form.css" rel="stylesheet">
+  <link href="assets/css/count-down.css" rel="stylesheet"> 
+  <link href="form/style.css" rel="stylesheet">
+  <link href="assets/css/timeline.css" rel="stylesheet">
+  <link href="assets/css/flicker-button.css" rel="stylesheet">
+  <link href="assets/css/hinhanhhoitrai.css" rel="stylesheet">
+  <link href="assets/css/modal.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
   <!-- <link href="assets/css/count-down_2.css" rel="stylesheet">  -->
 
   <!-- =======================================================
@@ -144,7 +147,7 @@
 
       <h1 class="logo me-auto me-lg-0 phone pad">
         <a href="#">
-          <img class="logo-img" src="assets/img/all/logo-plz-img.jpg" alt="logo-img">
+          <img class="logo-img" src="assets/img/logo-plz-img.jpg" alt="logo-img">
           <!-- <img class="logo-text" src="assets/img/logotext-plz-finall.png" alt="logo-text"> -->
         </a>
       </h1>
@@ -159,7 +162,7 @@
           <li><a class="nav-link scrollto active" href="#tongquanmain">TỔNG QUAN</a></li>
           <li><a class="nav-link scrollto" href="#about">GIỚI THIỆU</a></li>
           <li><a class="nav-link scrollto" href="#timeline">TIMELINE </a></li>
-          <li><a class="" href="#"><img class="logo-img" src="assets/img/all/logo-plz-img.jpg" alt="logo-img"></a></li>
+          <li><a class="" href="#"><img class="logo-img" src="assets/img/logo-plz-img.jpg" alt="logo-img"></a></li>
           <li><a class="nav-link scrollto" href="#services">ĐĂNG KÝ </a></li>
           <li><a class="nav-link scrollto" href="#team">BAN TỔ CHỨC</a></li>
           <li><a class="lien-he nav-link scrollto " href="#footer">LIÊN HỆ</a></li>
@@ -385,167 +388,256 @@
       </div>
 
       <!-- ======= Tabs Section ======= -->
+
+      
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img class="modal-img" src="https://media.tenor.com/Irg9yU74Zo8AAAAC/woohoo-yeah.gif" alt="sucess Gif, Đăng ký hội trại thành công"/>
+          <div class="modal-info">
+            <p>Cảm ơn bạn đã đăng ký tham gia Trại hè 2023 “Chuyến Tàu Thời Đại” ❤️</p>
+            <p>BTC sẽ gửi mail xác nhận và hướng dẫn thanh toán trong vài phút tới, <span class="do">bạn vui lòng kiểm tra mail và hoàn tất các thủ tục đăng ký </span> để nhận được vé tham gia.📩</p>
+            <p>Chúc bạn một ngày tốt lành. Hy vọng sẽ sớm gặp lại bạn tại chảo lửa của Trại hè 2023🔥</p>
+            <p class="tolen">Trân trọng!</p>
+          </div>
+        </div>
+      </div>
+
       <div class="tabs">
         <div class="tab">
           <button class="title tablinks" onclick="openCity(event, 'nam')" id="defaultOpen">DÀNH CHO NAM SINH</button>
           <button class="title tablinks tablinks-nu" onclick="openCity(event, 'nu')">DÀNH CHO NỮ SINH</button>
         </div>
-        <div class="chudangky">
+        <!-- <div class="chudangky">
           <p>(Đơn đăng ký sẽ được mở vào lúc 20:00 ngày 05.08.2023)</p>
-        </div>
-        <!-- <div id="nam" class="tabcontent">
+        </div> -->
+        <div id="nam" class="tabcontent">
           <form class="form" method="post" action="" name="informations-nam">
             <div class="title">Đơn đăng ký cho nam sinh</div>
             <div class="input-container ic1">
-              <label for="name">Họ và tên</label>
-              <input id="name" class="input" type="text" placeholder=" " name="name" required />
+              <label for="name">Họ và tên <span class="do">*</span></label>
+              <input id="name" class="input" type="text" name="Name" placeholder=""  required />
             </div>
             <div class="input-container ic2">
-              <label for="email">Email</label>
-              <input id="lastname" class="input" type="text" name="Email" placeholder="" required />
+              <label for="email">Số hộ chiếu <span class="do">*</span></label>
+              <input id="hochieu" class="input" type="text" name="Ho Chieu" placeholder="" required />
             </div>
             <div class="input-container ic2">
-              <label for="phonenumber">Số điện thoại</label>
-              <input id="phonenumber" class="input" type="text" name="PhoneNumber" placeholder="" required />
+              <label for="email">Email <span class="do">*</span></label>
+              <input id="email" class="input" type="email" name="Email" placeholder="" required />
             </div>
             <div class="input-container ic2">
-              <label for="tendonvi">Tên đơn vị (nếu có)</label>
-              <input id="tendonvi" class="input" type="text" name="Ten Don vi" placeholder=""  />
+              <label for="phonenumber">Số điện thoại <span class="do">*</span></label>
+              <input id="phonenumber" class="input" type="text" name="So dien thoai" placeholder="Ví dụ: +79991234567 hoặc 89991234567" required />
             </div>
             <div class="input-container ic2">
-              <label for="email">Tên trường đang học (nếu có)</label>
-              <input id="lastname" class="input" type="text" name="Ten Truong Dai hoc" placeholder=""  />
+              <label for="facebook">Link Facebook <span class="do">*</span></label>
+              <input id="facebook" class="input" type="url" name="Link Facebook" placeholder="" required />
             </div>
             <div class="input-container ic2">
-              <label for="date">Ngày sinh</label>
+              <label for="thanhpho">Địa chỉ sinh sống tại Nga <span class="do">*</span></label>
+              <input id="thanhpho" class="input" type="text" name="Thanh Pho" placeholder="Nếu ở Moscow, bạn vui lòng ghi rõ ở gần Metro nào" required />
+            </div>
+            <div class="input-container ic2">
+              <label for="tendonvi">Tên Chi Đoàn/Liên Chi Đoàn/Đoàn Cơ sở (nếu có)</label>
+              <input id="tendonvi" class="input" type="text" name="Ten Chi Doan" placeholder=""  />
+            </div>
+            <div class="input-container ic2">
+              <label for="tentruongdh">Tên trường đang học/địa chỉ nơi làm việc (nếu có)</label>
+              <input id="tentruongdh" class="input" type="text" name="Ten Truong Dai hoc" placeholder="Nếu là sinh viên ghi thêm lớp, khoa"  />
+            </div>
+            <div class="input-container ic2">
+              <label for="date">Ngày sinh <span class="do">*</span></label>
               <input id="date" class="input" type="date" name="Ngay sinh" placeholder="" required />
             </div>
             <div class="input-container ic2">
-              <label for="date">Quê quán</label>
-              <input id="quequan" class="input" type="text" name="Que quan" placeholder="" required />
+              <label for="size">Size giày (Châu Á) <span class="do">*</span></label>
+              <input id="size" class="input" type="textarea" name="Size Giay" placeholder="Ví dụ: nữ: size 36; nam: 42" required/>
             </div>
             <div class="input-container ic2">
-              <label for="date">Chú thích</label>
-              <input id="date" class="input" type="textarea" name="Chu thich" placeholder="Ví dụ: ăn chay, kiêng thịt heo, niềng răng, ... "  />
+              <label for="link-anh">Link ảnh cá nhân đăng ký thẻ trại sinh <span class="do">*</span></label>
+              <input id="link-anh" class="input" type="url" name="Avatar" placeholder="Đính kèm link drive, link vui lòng mở quyền truy cập và rõ mặt " required/>
+            </div>
+            <div class="input-container ic2">
+              <label for="note">Chú thích</label>
+              <br>
+              <label for="note">(Bổ sung chú thích nếu bạn thuộc khối ngành quốc phòng, an ninh cần xin giấy nghỉ phép)</label>
+              <input id="note" class="input" type="textarea" name="Chu thich" placeholder="Ví dụ: ăn chay, kiêng thịt heo, niềng răng, dị ứng với gì, ... " />
             </div>
 
             <br>
             <br>
-            
-            <p class="white">Chọn toa tàu mà bạn muốn vào: </p>
+            <p class="white">Chọn toa tàu mà bạn muốn đăng ký (mỗi toa đại diện cho mỗi trại) <span class="do">*</span></p>
             <div class="toatau-img">
-              <input type="radio" name="toatau" id="toa1" class="input-hidden" value="Toa 1" />
-              <label for="toa1"> <img src="assets/img/toatau5.jpg" alt="tau1" /> <p>Toa 1</p> </label>
+              <input type="radio" name="Toa Tau" id="toa1" class="input-hidden" value="Toa 1" />
+              <label for="toa1"> <img src="assets/img/all/toatau1.jpg" alt="tau1" />  </label>
 
-              <input type="radio" name="toatau" id="toa2" class="input-hidden" value="Toa 2" />
-              <label for="toa2"> <img src="assets/img/toatau5.jpg" alt="tau2" /> <p>Toa 2</p> </label>
+              <input type="radio" name="Toa Tau" id="toa2" class="input-hidden" value="Toa 2" />
+              <label for="toa2"> <img src="assets/img/all/toatau2.jpg" alt="tau2" />  </label>
 
-              <input type="radio" name="toatau" id="toa3" class="input-hidden" value="Toa 3" />
-              <label for="toa3"> <img src="assets/img/toatau5.jpg" alt="tau3" /> <p>Toa 3</p> </label>
+              <input type="radio" name="Toa Tau" id="toa3" class="input-hidden" value="Toa 3" />
+              <label for="toa3"> <img src="assets/img/all/toatau3.jpg" alt="tau3" />  </label>
 
-              <input type="radio" name="toatau" id="toa4" class="input-hidden" value="Toa 4" />
-              <label for="toa4"> <img src="assets/img/toatau5.jpg" alt="tau4" /><p>Toa 4</p> </label>
+              <input type="radio" name="Toa Tau" id="toa4" class="input-hidden" value="Toa 4" />
+              <label for="toa4"> <img src="assets/img/all/toatau4.jpg" alt="tau4" /> </label>
 
-              <input type="radio" name="toatau" id="toa5" class="input-hidden" value="Toa 5" />
-              <label for="toa5"> <img src="assets/img/toatau5.jpg" alt="tau5" /> <p>Toa 5</p> </label>
+              <input type="radio" name="Toa Tau" id="toa5" class="input-hidden" value="Toa 5" />
+              <label for="toa5"> <img src="assets/img/all/toatau5.jpg" alt="tau5" />  </label>
 
-              <input type="radio" name="toatau" id="toa6" class="input-hidden" value="Toa 6" />
-              <label for="toa6"> <img src="assets/img/toatau5.jpg" alt="tau1" /> <p>Toa 6</p> </label>
+              <input type="radio" name="Toa Tau" id="toa6" class="input-hidden" value="Toa 6" />
+              <label for="toa6"> <img src="assets/img/all/toatau6.jpg" alt="tau1" />  </label>
 
-              <input type="radio" name="toatau" id="toa7" class="input-hidden" value="Toa 7" />
-              <label for="toa7"> <img src="assets/img/toatau5.jpg" alt="tau2" /> <p>Toa 7</p> </label>
+              <input type="radio" name="Toa Tau" id="toa7" class="input-hidden" value="Toa 7" />
+              <label for="toa7"> <img src="assets/img/all/toatau7.jpg" alt="tau2" />  </label>
 
-              <input type="radio" name="toatau" id="toa8" class="input-hidden" value="Toa 8" />
-              <label for="toa8"> <img src="assets/img/toatau5.jpg" alt="tau3" /> <p>Toa 8</p> </label>
+              <input type="radio" name="Toa Tau" id="toa8" class="input-hidden" value="Toa 8" />
+              <label for="toa8"> <img src="assets/img/all/toatau8.jpg" alt="tau3" />  </label>
 
-              <input type="radio" name="toatau" id="toa9" class="input-hidden" value="Toa 9" />
-              <label for="toa9"> <img src="assets/img/toatau5.jpg" alt="tau4" /><p>Toa 9</p> </label>
+              <input type="radio" name="Toa Tau" id="toa9" class="input-hidden" value="Toa 9" />
+              <label for="toa9"> <img src="assets/img/all/toatau9.jpg" alt="tau4" /> </label>
 
-              <input type="radio" name="toatau" id="toa10" class="input-hidden" value="Toa 10" />
-              <label for="toa10"> <img src="assets/img/toatau5.jpg" alt="tau5" /> <p>Toa 10</p> </label>
+              <input type="radio" name="Toa Tau" id="toa10" class="input-hidden" value="Toa 10" />
+              <label for="toa10"> <img src="assets/img/all/toatau10.jpg" alt="tau5" /> </label>
 
             </div>
 
-            <button id="button-nam" type="submit" class="submit">submit</button>
+            <br>
+            <div class="yeucau">
+              <p>Chương trình Trại hè 2023 - Chuyến Tàu Thời Đại sẽ được tổ chức vào ngày 02.09 và 03.09.2023 tại địa điểm: Obninsk Kaluga. </p>
+              <input type="checkbox" id="tuanthu" name="Tuan Thu" value="co" required />
+              <label for="tuanthu">Tôi cam kết sẽ tuân thủ đúng các nội quy của chương trình </label>
+            </div>   
+            <br>
+
+            <div>
+              <p class="luuy-2">Lưu ý: </p>
+              <p class="luuy">1. Thông tin cung cấp cho BTC được sử dụng chính chủ, thông tin khớp với số hộ chiếu và không được đăng ký hộ dưới bất kỳ trường hợp nào.</p>
+              <p class="luuy">2. Cổng đăng ký có thể đóng sớm hơn khi đủ số lượng trại sinh. </p>
+              <p class="luuy">3. BTC sẽ gửi mail xác nhận và hướng dẫn thanh toán ngay sau khi nhận được đơn đăng ký của bạn (Đối với các đơn đăng ký từ 0h AM đến 07h00 AM, BTC sẽ gửi mail xác nhận vào lúc 08h00 AM).</p>
+              <p class="luuy">4. Nếu bạn thuộc khối ngành quốc phòng, an ninh cần xin giấy nghỉ phép, vui lòng ghi rõ ở phần chú thích.</p>
+              <br>
+              <p class="luuy">Mọi tin bạn cung cấp sẽ được BTC bảo mật, chỉ sử dụng vì mục đích chương trình.</p>
+              <p class="luuy">Bạn vui lòng kiểm tra lại toàn bộ thông tin trước khi bấm đăng ký.</p>
+              <p class="luuy">Ban Tổ chức Trại hè 2023 xin trân trọng cảm ơn!</p>
+            </div>
+            <button id="button-nam" type="submit" class="submit" >Submit</button>
           </form>
         </div>
-        
+
         <div id="nu" class="tabcontent">
-          <form class="form" method="post" action="" name="informations-nam">
+          <form class="form" method="post" action="" name="informations-nu">
             <div class="title">Đơn đăng ký cho nữ sinh</div>
             <div class="input-container ic1">
-              <label for="name">Họ và tên</label>
-              <input id="name" class="input" type="text" placeholder=" " name="name" required />
+              <label for="nu-name">Họ và tên <span class="do">*</span></label>
+              <input id="nu-name" class="input" type="text" name="Name nu" placeholder=""  required />
             </div>
             <div class="input-container ic2">
-              <label for="email">Email</label>
-              <input id="lastname" class="input" type="text" name="Email" placeholder="" required />
+              <label for="nu-email">Số hộ chiếu <span class="do">*</span></label>
+              <input id="nu-hochieu" class="input" type="text" name="Ho Chieu nu" placeholder="" required />
             </div>
             <div class="input-container ic2">
-              <label for="phonenumber">Số điện thoại</label>
-              <input id="phonenumber" class="input" type="text" name="PhoneNumber" placeholder="" required />
+              <label for="nu-email">Email <span class="do">*</span></label>
+              <input id="nu-email" class="input" type="email" name="Email nu" placeholder="" required />
             </div>
             <div class="input-container ic2">
-              <label for="tendonvi">Tên đơn vị (nếu có)</label>
-              <input id="tendonvi" class="input" type="text" name="Ten Don vi" placeholder=""  />
+              <label for="nu-phonenumber">Số điện thoại <span class="do">*</span></label>
+              <input id="nu-phonenumber" class="input" type="text" name="So dien thoai nu" placeholder="Ví dụ: +79991234567 hoặc 89991234567" required />
             </div>
             <div class="input-container ic2">
-              <label for="email">Tên trường đang học (nếu có)</label>
-              <input id="lastname" class="input" type="text" name="Ten Truong Dai hoc" placeholder=""  />
+              <label for="nu-facebook">Link Facebook <span class="do">*</span></label>
+              <input id="nu-facebook" class="input" type="text" name="Link Facebook nu" placeholder="" required />
             </div>
             <div class="input-container ic2">
-              <label for="date">Ngày sinh</label>
-              <input id="date" class="input" type="date" name="Ngay sinh" placeholder="" required />
+              <label for="nu-thanhpho">Địa chỉ sinh sống tại Nga <span class="do">*</span></label>
+              <input id="nu-thanhpho" class="input" type="text" name="Thanh Pho nu" placeholder="Nếu ở Moscow, bạn vui lòng ghi rõ ở gần Metro nào" required />
             </div>
             <div class="input-container ic2">
-              <label for="date">Quê quán</label>
-              <input id="quequan" class="input" type="text" name="Que quan" placeholder="" required />
+              <label for="nu-tendonvi">Tên Chi Đoàn/Liên Chi Đoàn/Đoàn Cơ sở (nếu có)</label>
+              <input id="nu-tendonvi" class="input" type="text" name="Ten Chi Doan nu" placeholder=""  />
             </div>
             <div class="input-container ic2">
-              <label for="date">Chú thích</label>
-              <input id="date" class="input" type="textarea" name="Chu thich" placeholder="Ví dụ: ăn chay, kiêng thịt heo, niềng răng, ... "  />
+              <label for="nu-tentruongdh">Tên trường đang học/địa chỉ nơi làm việc (nếu có)</label>
+              <input id="nu-tentruongdh" class="input" type="text" name="Ten Truong Dai hoc nu" placeholder="Nếu là sinh viên vui lòng ghi rõ tên trường lớp"  />
+            </div>
+            <div class="input-container ic2">
+              <label for="nu-date">Ngày sinh <span class="do">*</span></label>
+              <input id="nu-date" class="input" type="date" name="Ngay sinh nu" placeholder="" required />
+            </div>
+            <div class="input-container ic2">
+              <label for="nu-size">Size giày (Châu Á) <span class="do">*</span></label>
+              <input id="nu-size" class="input" type="textarea" name="Size Giay nu" placeholder="Ví dụ: nữ: size 36; nam: 42" required/>
+            </div>
+            <div class="input-container ic2">
+              <label for="nu-link-anh">Link ảnh cá nhân đăng ký thẻ trại sinh <span class="do">*</span></label>
+              <input id="nu-link-anh" class="input" type="url" name="Avatar nu" placeholder="Đính kèm link drive, link vui lòng mở quyền truy cập và rõ mặt " required/>
+            </div>
+            <div class="input-container ic2">
+              <label for="nu-note">Chú thích</label>
+              <input id="nu-note" class="input" type="textarea" name="Chu thich nu" placeholder="Ví dụ: ăn chay, kiêng thịt heo, niềng răng, dị ứng với gì, ... " />
             </div>
 
             <br>
             <br>
-            
-            <p class="white">Chọn toa tàu mà bạn muốn vào: </p>
+            <p class="white">Chọn toa tàu mà bạn muốn đăng ký (mỗi toa đại diện cho mỗi trại) <span class="do">*</span></p>
             <div class="toatau-img">
-              <input type="radio" name="toatau" id="toa1" class="input-hidden" value="Toa 1" />
-              <label for="toa1"> <img src="assets/img/toatau5.jpg" alt="tau1" /> <p>Toa 1</p> </label>
+              <input type="radio" name="Toa Tau nu" id="toa1-nu" class="input-hidden" value="Toa 1" />
+              <label for="toa1-nu"> <img src="assets/img/all/toatau1.jpg" alt="tau1" />  </label>
 
-              <input type="radio" name="toatau" id="toa2" class="input-hidden" value="Toa 2" />
-              <label for="toa2"> <img src="assets/img/toatau5.jpg" alt="tau2" /> <p>Toa 2</p> </label>
+              <input type="radio" name="Toa Tau nu" id="toa2-nu" class="input-hidden" value="Toa 2" />
+              <label for="toa2-nu"> <img src="assets/img/all/toatau2.jpg" alt="tau2" />  </label>
 
-              <input type="radio" name="toatau" id="toa3" class="input-hidden" value="Toa 3" />
-              <label for="toa3"> <img src="assets/img/toatau5.jpg" alt="tau3" /> <p>Toa 3</p> </label>
+              <input type="radio" name="Toa Tau nu" id="toa3-nu" class="input-hidden" value="Toa 3" />
+              <label for="toa3-nu"> <img src="assets/img/all/toatau3.jpg" alt="tau3" />  </label>
 
-              <input type="radio" name="toatau" id="toa4" class="input-hidden" value="Toa 4" />
-              <label for="toa4"> <img src="assets/img/toatau5.jpg" alt="tau4" /><p>Toa 4</p> </label>
+              <input type="radio" name="Toa Tau nu" id="toa4-nu" class="input-hidden" value="Toa 4" />
+              <label for="toa4-nu"> <img src="assets/img/all/toatau4.jpg" alt="tau4" /> </label>
 
-              <input type="radio" name="toatau" id="toa5" class="input-hidden" value="Toa 5" />
-              <label for="toa5"> <img src="assets/img/toatau5.jpg" alt="tau5" /> <p>Toa 5</p> </label>
+              <input type="radio" name="Toa Tau nu" id="toa5-nu" class="input-hidden" value="Toa 5" />
+              <label for="toa5-nu"> <img src="assets/img/all/toatau5.jpg" alt="tau5" />  </label>
 
-              <input type="radio" name="toatau" id="toa6" class="input-hidden" value="Toa 6" />
-              <label for="toa6"> <img src="assets/img/toatau5.jpg" alt="tau1" /> <p>Toa 6</p> </label>
+              <input type="radio" name="Toa Tau nu" id="toa6-nu" class="input-hidden" value="Toa 6" />
+              <label for="toa6-nu"> <img src="assets/img/all/toatau6.jpg" alt="tau1" />  </label>
 
-              <input type="radio" name="toatau" id="toa7" class="input-hidden" value="Toa 7" />
-              <label for="toa7"> <img src="assets/img/toatau5.jpg" alt="tau2" /> <p>Toa 7</p> </label>
+              <input type="radio" name="Toa Tau nu" id="toa7-nu" class="input-hidden" value="Toa 7" />
+              <label for="toa7-nu"> <img src="assets/img/all/toatau7.jpg" alt="tau2" />  </label>
 
-              <input type="radio" name="toatau" id="toa8" class="input-hidden" value="Toa 8" />
-              <label for="toa8"> <img src="assets/img/toatau5.jpg" alt="tau3" /> <p>Toa 8</p> </label>
+              <input type="radio" name="Toa Tau nu" id="toa8-nu" class="input-hidden" value="Toa 8" />
+              <label for="toa8-nu"> <img src="assets/img/all/toatau8.jpg" alt="tau3" />  </label>
 
-              <input type="radio" name="toatau" id="toa9" class="input-hidden" value="Toa 9" />
-              <label for="toa9"> <img src="assets/img/toatau5.jpg" alt="tau4" /><p>Toa 9</p> </label>
+              <input type="radio" name="Toa Tau nu" id="toa9-nu" class="input-hidden" value="Toa 9" />
+              <label for="toa9-nu"> <img src="assets/img/all/toatau9.jpg" alt="tau4" /> </label>
 
-              <input type="radio" name="toatau" id="toa10" class="input-hidden" value="Toa 10" />
-              <label for="toa10"> <img src="assets/img/toatau5.jpg" alt="tau5" /> <p>Toa 10</p> </label>
+              <input type="radio" name="Toa Tau nu" id="toa10-nu" class="input-hidden" value="Toa 10" />
+              <label for="toa10-nu"> <img src="assets/img/all/toatau10.jpg" alt="tau5" /> </label>
 
             </div>
 
-            <button type="submit" class="submit">submit</button>
+            <br>
+            <div class="yeucau">
+                <p>Chương trình Trại hè 2023 - Chuyến Tàu Thời Đại sẽ được tổ chức vào ngày 02.09 và 03.09.2023 tại địa điểm: Obninsk Kaluga. </p>
+                <input type="checkbox" id="tuanthu-nu" name="Tuan Thu nu" value="co" required />
+                <label for="tuanthu-nu">Tôi cam kết sẽ tuân thủ đúng các nội quy của chương trình </label>
+            </div>   
+            <br>
+
+            <div>
+                <p class="luuy-2">Lưu ý: </p>
+                <p class="luuy">1. Thông tin cung cấp cho BTC được sử dụng chính chủ, thông tin khớp với số hộ chiếu và không được đăng ký hộ dưới bất kỳ trường hợp nào.</p>
+                <p class="luuy">2. Cổng đăng ký có thể đóng sớm hơn khi đủ số lượng trại sinh. </p>
+                <p class="luuy">3. BTC sẽ gửi mail xác nhận và hướng dẫn thanh toán ngay sau khi nhận được đơn đăng ký của bạn (Đối với các đơn đăng ký từ 0h AM đến 07h00 AM, BTC sẽ gửi mail xác nhận vào lúc 08h00 AM).</p>
+                <p class="luuy">4. Nếu bạn thuộc khối ngành quốc phòng, an ninh cần xin giấy nghỉ phép, vui lòng ghi rõ ở phần chú thích.</p>
+                <br>
+                <p class="luuy">Mọi tin bạn cung cấp sẽ được BTC bảo mật, chỉ sử dụng vì mục đích chương trình.</p>
+                <p class="luuy">Bạn vui lòng kiểm tra lại toàn bộ thông tin trước khi bấm đăng ký.</p>
+                <p class="luuy">Ban Tổ chức Trại hè 2023 xin trân trọng cảm ơn!</p>
+            </div>
+
+            <button id="button-nu" type="submit" class="submit" >Submit</button>
           </form>
-        </div> -->
+        </div>
+
+
 
       </div>
     </section>
@@ -565,10 +657,10 @@
           <div class="col-lg-3 col-md-4 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="assets/img/team/final/anhHaii.jpg" class="img-fluid" alt="anh Hai">
+                <img src="assets/img/all/anhHaii.jpg" class="img-fluid" alt="anh Hai">
               </div>
               <div class="member-info">
-                <span>Anh Ngô Bá Hoàng Hải</span>
+                <span>Ngô Bá Hoàng Hải</span>
                 <span>Ban Chỉ đạo</span>
               </div>
             </div>
@@ -580,7 +672,7 @@
                 <img src="assets/img/all/anhLinhh.jpeg" class="img-fluid" alt="anh Linh">
               </div>
               <div class="member-info">
-                <span>Anh Nguyễn Việt Linh</span>
+                <span>Nguyễn Việt Linh</span>
                 <span>Trưởng Ban tổ chức</span>
               </div>
             </div>
@@ -592,7 +684,7 @@
                 <img src="assets/img/all/anhThuann.jpg" class="img-fluid" alt="anh Thuan">
               </div>
               <div class="member-info">
-                <span>Anh Trần Phú Thuận</span>
+                <span>Trần Phú Thuận</span>
                 <span>Ban Cố vấn</span>
               </div>
             </div>
@@ -604,7 +696,7 @@
                 <img src="assets/img/all/chiHoaa.jpg" class="img-fluid" alt="chi Hoa">
               </div>
               <div class="member-info">
-                <span>Cô Mai Nguyễn Tuyết Hoa</span>
+                <span>Mai Nguyễn Tuyết Hoa</span>
                 <span>Ban Cố vấn</span>
               </div>
             </div>
@@ -627,7 +719,7 @@
                 <img src="assets/img/all/anhduc.jpeg" class="img-fluid" alt="anh Duc">
               </div>
               <div class="member-info">
-                <span>Anh Lê Huỳnh Đức</span>
+                <span>Lê Huỳnh Đức</span>
                 <span>Phó Ban tổ chức</span>
               </div>
             </div>
@@ -636,10 +728,10 @@
           <div class="col-lg-3 col-md-4 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
-                <img src="assets/img/all/anhDuy.jpeg" class="img-fluid" alt="anh Duy">
+                <img src="assets/img/all/anhDuy.jpeg" class="img-fluid" alt="Duy">
               </div>
               <div class="member-info">
-                <span>Anh Nguyễn Khánh Duy</span>
+                <span>Nguyễn Khánh Duy</span>
                 <span>Phó Ban tổ chức</span>
               </div>
             </div>
@@ -658,7 +750,7 @@
         <div class="truongban row">
 
           <!-- Anh 1 -->
-          <div class="truong-ban col-lg-4 col-md-4 d-flex align-items-stretch">
+          <div class="truong-ban col-lg-3 col-md-4 d-flex align-items-stretch">
             <div class="member-1" data-aos="fade-up" data-aos-delay="400">
               <p>Trần Thị Minh Nhật</p>
               <p>Ban Truyền thông</p>
@@ -667,7 +759,7 @@
           </div>
 
           <!-- Anh 2 -->
-          <div class="truong-ban col-lg-4 col-md-4 d-flex align-items-stretch">
+          <div class="truong-ban col-lg-3 col-md-4 d-flex align-items-stretch">
             <div class="member-1" data-aos="fade-up" data-aos-delay="400">
               <p>Trần Công Tâm Anh </p>
               <p>Ban Đối ngoại </p>
@@ -676,11 +768,20 @@
           </div>
           
           <!-- Anh 3 -->
-          <div class="truong-ban col-lg-4 col-md-4 d-flex align-items-stretch">
+          <div class="truong-ban col-lg-3 col-md-4 d-flex align-items-stretch">
             <div class="member-1" data-aos="fade-up" data-aos-delay="400">
               <p>Trần Thị Vân Anh </p>
               <p>Ban Nội vụ</p>
               <img src="assets/img/all/vananhhh.jpg" class="img-fluid-1" alt="btc2">
+            </div>
+          </div>
+
+          <!-- Anh 4 -->
+          <div class="truong-ban col-lg-3 col-md-4 d-flex align-items-stretch">
+            <div class="member-1" data-aos="fade-up" data-aos-delay="400">
+              <p>Đoàn Đức Thắng</p>
+              <p>Ban An Ninh</p>
+              <img src="assets/img/all/doanthanggg.jpeg" class="img-fluid-1" alt="btc2">
             </div>
           </div>
         </div>
@@ -688,7 +789,7 @@
         <!-- Hang 4 -->
         <div class="truongban row">
 
-          <!-- Anh 1 -->
+          <!-- Anh 1 -->  
           <div class="truong-ban col-lg-4 col-md-4 d-flex align-items-stretch">
             <div class="member-1" data-aos="fade-up" data-aos-delay="400">
               <p>Nguyễn Trung Hiếu </p>
@@ -730,42 +831,24 @@
           </div>
           <!-- <div class="col-lg-4 d-flex align-items-center"> -->
           <div class="quymochtr-1">
-            <!-- <div class="first">
-              <p></p>
-            </div> -->
-
-            <div class="">
-              <p></p>
-            </div>
   
+            <div></div>
             <div class="glowing-traisinh">
               <p>240 Trại sinh</p>
             </div>
-  
-            <div class="">
-              <p></p>
-            </div>
-<!-- 
-            <div class="last">
-              <p></p>
-            </div> -->
+            <div></div>
+
           </div>  
 
         </div>
 
         <!-- Hang 2 -->
         <div class="quymochtr">
+          <div></div>
           <div class="title section-title title-quymo">
             <p>60 thành viên BTC</p>
           </div>
-
-          <!-- <div class="kim-cuong title section-title">
-            <p>100 khách mời</p>
-          </div> -->
-
-          <div class="kim-cuong title section-title">
-            <p>Và 10 trại</p>
-          </div>
+          <div></div>
         </div>  
     </section>
 
@@ -822,10 +905,10 @@
 
         <div class="row">
           <div class="col-lg-6 col-md-6"> 
-            <a href="#"><img src="assets/img/all/logo-plz-img.jpg" class="img-fluid"/></a>
-            <a href="#"><img src="assets/img/all/logotext-plz-finall.jpg" class="img-fluid maytinh"/></a>
+            <a href="#"><img src="assets/img/logo-plz-img.jpg" class="img-fluid"/></a>
+            <a href="#"><img src="assets/img/logotext-plz-finall.png" class="img-fluid maytinh"/></a>
             <p>
-              Summer Camp 2023 - Chuyến tàu thời đại được tổ chức bởi Ban Cán sự Đoàn tại Liên bang Nga với mục đích tạo ra sân chơi cho các bạn sinh viên đang học tập tại Liên bang Nga.
+              Summer Camp 2023 - Chuyến Tàu Thời Đại được tổ chức bởi Ban Cán sự Đoàn tại Liên bang Nga với mục đích tạo ra sân chơi cho các bạn sinh viên đang học tập tại Liên bang Nga.
             </p>
           </div>
           <div class="col-lg-6 col-md-6">
@@ -835,7 +918,7 @@
               <!-- <h3>CHUYẾN TÀU THỜI ĐẠI</h3> -->
               <div class="icon-1">
                 <p><i class="ri-pushpin-fill"></i> Mọi thắc mắc xin liên hệ: </p>
-                <p><i class="ri-phone-fill"></i>  BTC chương trình: Anh Nguyễn Việt Linh - 8 (916) 405-03-86 </p>
+                <p><i class="ri-phone-fill"></i> Anh Lê Huỳnh Đức - phó Ban Tổ chức: 8 (966) 312-39-08 </p>
                 <p><i class="ri-mail-fill"></i> Email: summercamp2023@gmail.com</p>
                 <p><i class="ri-contacts-fill"></i> Facebook: <a target="_blank" href="https://www.facebook.com/bcsdsummercamps/"> facebook.com/bcsdsummercamps/</a></p>
               </div>
@@ -873,7 +956,7 @@
   <!-- Tabs -->
   <script>
     function openCity(evt, cityName) {
-      var i, tabcontent, tablinks;
+      let i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
@@ -929,6 +1012,57 @@
 
   <!-- GG sheet -->
   <script>
+    //
+
+    const scriptURLNu = 'https://script.google.com/macros/s/AKfycbyxbKjwdFZJpFCU_f7o-ORnu5gwLqpoAP-539JzoRTrX86Jm_OQh5MTBcFs1kxKOZjSoA/exec'
+
+    const formNu = document.forms['informations-nu']
+
+    let submitedLoadingNu = false;
+
+    const loadingNu = document.getElementById("button-nu");
+
+    let modalNu = document.getElementById("myModal");
+    let modalNuWait = document.getElementById("myModalWait");
+    
+    // Get the <span> element that closes the modal
+    let spanNu = document.getElementsByClassName("close")[0];
+
+    formNu.addEventListener('submit', e => {
+      e.preventDefault()
+      if (!submitedLoadingNu) {
+
+        loadingNu.innerHTML = "Loading"
+        fetch(scriptURLNu, { method: 'POST', body: new FormData(formNu)})
+        .then(() => {
+
+          // When the user clicks the button, open the modal 
+          modal.style.display = "flex";
+          
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+            modal.style.display = "none"
+          }
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none"
+            }
+          }
+          // alert("sub dc roi")
+        })
+        .then(() => { formNu.reset() })
+        .catch(error => console.error('Error!', error.message))
+        .finally(() => {
+          loadingNu.innerHTML = "Submit"
+        })
+      }
+    })
+    
+  </script>
+
+  <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyZKzilrgr1cmsydmd1_jc3glemlF6ZIGaFggUAQ3PoQbxQBY1-3ezf47Jm4x6xarJX4Q/exec'
     const formNam = document.forms['informations-nam']
 
@@ -936,37 +1070,76 @@
 
     const loading = document.getElementById("button-nam");
 
+    let modal = document.getElementById("myModal");
+    
+    // Get the <span> element that closes the modal
+    let span = document.getElementsByClassName("close")[0];
+
     formNam.addEventListener('submit', e => {
       e.preventDefault()
       if (!submitedLoading) {
+        
         submitedLoading = true;
         loading.innerHTML ="Loading"
         fetch(scriptURL, { method: 'POST', body: new FormData(formNam)})
         .then(() => {
-          alert("ABC")
+          // When the user clicks the button, open the modal 
+          modal.style.display = "flex";
+          
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+            modal.style.display = "none"
+          }
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none"
+            }
+          }
+          // alert("sub dc roi")
         })
         .then(() => { formNam.reset() })
         .catch(error => console.error('Error!', error.message))
         .finally(() => {
+
           loading.innerHTML ="Submit"
           submitedLoading = false
+          
         })
       }
     })
 
-    //
-
-    const scriptURLNU = 'https://script.google.com/macros/s/AKfycbx1Ox8G8aYZWua6vYrEcYSkCgUSLfqUK9Y21f6dMstqIKsLUaf5aHp_JgoeQkf9nOVGZw/exec'
-    const formNu = document.forms['informations-nu']
-
-    formNu.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURLNU, { method: 'POST', body: new FormData(formNu)})
-      .then(response => alert("Thank you! your form is submitted successfully." ))
-      .then(() => { console.log('da thanh cong') })
-      .catch(error => console.error('Error!', error.message))
-    })
   </script>
+
+  <!-- Modal  -->
+  <!-- <script>
+    // Get the modal
+    let modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    let btn = document.getElementById("button-nam");
+    
+    // Get the <span> element that closes the modal
+    let span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script> -->
 
 
   <!-- insert HTML -->

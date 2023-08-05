@@ -290,10 +290,6 @@
   .ag-timeline-card_arrow {
     margin-top: 12px;
   }
-
-  .swiper-slide .timeline-1 p {
-    font-size: 21px;
-  }
 }
 
 @media only screen and (max-width: 767px) {

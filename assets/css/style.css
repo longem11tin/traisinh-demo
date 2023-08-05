@@ -572,6 +572,7 @@ tabs
   display: block;
 }
 
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -1271,7 +1272,7 @@ section {
 
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 28% 1fr ;
+  grid-template-columns: 1fr 1fr 1fr ;
   margin: 10px 0;
 }
 
@@ -1279,7 +1280,7 @@ section {
 
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 10px 0;
 }
 
@@ -1499,11 +1500,13 @@ section {
   margin-left: 0%;
 }
 
+
 .team .img-fluid-1 {
   position: relative;
   justify-content: center;
-  max-width: 70%;
+  max-width: 80%;
   border-radius: 50%;
+  margin: 10px;
 }
 
 .team .truongban .member-1 {
@@ -1721,6 +1724,19 @@ section {
 # quyen loi
 --------------------------------------------------------------*/
 
+.luuy {
+  color: #fff;
+}
+
+.luuy-2 {
+  color: red; 
+  font-size: 18px;
+}
+
+/*--------------------------------------------------------------
+# quyen loi
+--------------------------------------------------------------*/
+
 .quyenloi-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1736,9 +1752,9 @@ section {
 
 #quyenloi .quyenloi-grid .bbox .box-img {
 
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   border-radius: 3px;
-  aspect-ratio: 4/3;
+  aspect-ratio: 8/3;
 }
 
 /* .swiper-container-wrapper--timeline .swiper-slide .box-img{
@@ -1995,8 +2011,8 @@ section {
   }
 
   .team .img-fluid-1 {
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
   }
 
   .team .truongban .member-1 {
@@ -2124,11 +2140,19 @@ section {
 
   .quymochtr-1 {
 
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin: 10px 0;
+  }
+
+  .quymochtr-1 {
+
     grid-template-columns: 1fr 50% 1fr ;
     margin: 10px 0;
   }
 
-  .swiper-slide .timeline-1 p {
-    font-size: 14px;
+  .quymochtr {
+    grid-template-columns: 1fr 80% 1fr;
   }
+
+
 }

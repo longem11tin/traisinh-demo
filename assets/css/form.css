@@ -123,7 +123,7 @@
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 5px;
+    grid-gap: 2px;
 
 }
 
@@ -204,7 +204,6 @@ select::-ms-expand {
     cursor: pointer;
     font-size: 18px;
     height: 50px;
-    margin-top: 38px;
     outline: 0;
     text-align: center;
     width: 100%;
@@ -264,13 +263,28 @@ input[type=radio]:checked + label>img {
 /* Stuff after this is only to make things more pretty */
 input[type=radio] + label>img {
     border: 1px dashed #444;
-    width: 150px;
-    height: 150px;
+    width: 90%;
+    height: auto;
     transition: 500ms all;
+    margin: 10px 0 0;
 }
 
 input[type=radio]:checked + label>img {
     transform: 
     rotateZ(-1deg) 
     rotateX(1deg);
+}
+
+.form .yeucau label {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.form .yeucau p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.do {
+    color: red;
 }
