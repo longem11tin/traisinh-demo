@@ -382,6 +382,9 @@
           <h3>Vé được mở bán trong 5 ngày</h3>
           <h3>Từ 05.08.2023 đến 10.08.2023</h3>
         </div>
+        <!-- <p>Đơn đăng ký sẽ mở sau:</p>
+        <br>
+        <div id="timer"></div> -->
       </div>
 
       <!-- ======= Tabs Section ======= -->
@@ -394,6 +397,21 @@
           <img class="modal-img" src="https://media.tenor.com/Irg9yU74Zo8AAAAC/woohoo-yeah.gif" alt="sucess Gif, Đăng ký hội trại thành công"/>
           <div class="modal-info">
             <p>Cảm ơn bạn đã đăng ký tham gia Trại hè 2023 “Chuyến Tàu Thời Đại” ❤️</p>
+            <p>BTC sẽ gửi mail xác nhận và hướng dẫn thanh toán trong vài phút tới, <span class="do">bạn vui lòng kiểm tra mail và hoàn tất các thủ tục đăng ký </span> để nhận được vé tham gia.📩</p>
+            <p>Chúc bạn một ngày tốt lành. Hy vọng sẽ sớm gặp lại bạn tại chảo lửa của Trại hè 2023🔥</p>
+            <p class="tolen">Trân trọng!</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="myModalWait" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img class="modal-img" src="https://media.tenor.com/Irg9yU74Zo8AAAAC/woohoo-yeah.gif" alt="sucess Gif, Đăng ký hội trại thành công"/>
+          <div class="modal-info">
+            <p>Cảm ơn bạn đã đăng ký tham gia Trại hè 2023 “Chuyến Tàu Thời Đại” ❤️</p>
+            <p>Hiện tại đơn nam đang hết vế❤️</p>
             <p>BTC sẽ gửi mail xác nhận và hướng dẫn thanh toán trong vài phút tới, <span class="do">bạn vui lòng kiểm tra mail và hoàn tất các thủ tục đăng ký </span> để nhận được vé tham gia.📩</p>
             <p>Chúc bạn một ngày tốt lành. Hy vọng sẽ sớm gặp lại bạn tại chảo lửa của Trại hè 2023🔥</p>
             <p class="tolen">Trân trọng!</p>
@@ -429,7 +447,8 @@
               <input id="phonenumber" class="input" type="text" name="So dien thoai" placeholder="Ví dụ: +79991234567 hoặc 89991234567" required />
             </div>
             <div class="input-container ic2">
-              <label for="facebook">Link Facebook <span class="do">*</span></label>
+              <label for="facebook">Link Facebook hoặc (link Vk, link Skype nếu không có link Fb) <span class="do">*</span></label>
+              <br>
               <input id="facebook" class="input" type="url" name="Link Facebook" placeholder="" required />
             </div>
             <div class="input-container ic2">
@@ -460,12 +479,14 @@
               <label for="note">Chú thích</label>
               <br>
               <label for="note">(Bổ sung chú thích nếu bạn thuộc khối ngành quốc phòng, an ninh cần xin giấy nghỉ phép)</label>
+              <br>
               <input id="note" class="input" type="textarea" name="Chu thich" placeholder="Ví dụ: ăn chay, kiêng thịt heo, niềng răng, dị ứng với gì, ... " />
             </div>
 
             <br>
             <br>
             <p class="white">Chọn toa tàu mà bạn muốn đăng ký (mỗi toa đại diện cho mỗi trại) <span class="do">*</span></p>
+            <p class="white">Toa 7 của nam hiện đã hết chỗ</p>
             <div class="toatau-img">
               <input type="radio" name="Toa Tau" id="toa1" class="input-hidden" value="Toa 1" required/>
               <label for="toa1"> <img src="assets/img/all/toatau1.jpg" alt="tau1" />  </label>
@@ -479,13 +500,13 @@
               <input type="radio" name="Toa Tau" id="toa4" class="input-hidden" value="Toa 4" />
               <label for="toa4"> <img src="assets/img/all/toatau4.jpg" alt="tau4" /> </label>
 
-              <input type="radio" name="Toa Tau" id="toa5" class="input-hidden" value="Toa 5" />
+              <input type="radio" name="Toa Tau" id="toa5" class="input-hidden" value="Toa 5" disabled />
               <label for="toa5"> <img src="assets/img/all/toatau5.jpg" alt="tau5" />  </label>
 
               <input type="radio" name="Toa Tau" id="toa6" class="input-hidden" value="Toa 6" />
               <label for="toa6"> <img src="assets/img/all/toatau6.jpg" alt="tau1" />  </label>
 
-              <input type="radio" name="Toa Tau" id="toa7" class="input-hidden" value="Toa 7" />
+              <input type="radio" name="Toa Tau" id="toa7" class="input-hidden" value="Toa 7" disabled />
               <label for="toa7"> <img src="assets/img/all/toatau7.jpg" alt="tau2" />  </label>
 
               <input type="radio" name="Toa Tau" id="toa8" class="input-hidden" value="Toa 8" />
@@ -578,7 +599,7 @@
             <br>
             <p class="white">Chọn toa tàu mà bạn muốn đăng ký (mỗi toa đại diện cho mỗi trại) <span class="do">*</span></p>
             <div class="toatau-img">
-              <input type="radio" name="Toa Tau nu" id="toa1-nu" class="input-hidden" value="Toa 1" required />
+              <input type="radio" name="Toa Tau nu" id="toa1-nu" class="input-hidden" value="Toa 1" required/>
               <label for="toa1-nu"> <img src="assets/img/all/toatau1.jpg" alt="tau1" />  </label>
 
               <input type="radio" name="Toa Tau nu" id="toa2-nu" class="input-hidden" value="Toa 2" />
@@ -590,13 +611,13 @@
               <input type="radio" name="Toa Tau nu" id="toa4-nu" class="input-hidden" value="Toa 4" />
               <label for="toa4-nu"> <img src="assets/img/all/toatau4.jpg" alt="tau4" /> </label>
 
-              <input type="radio" name="Toa Tau nu" id="toa5-nu" class="input-hidden" value="Toa 5" />
+              <input type="radio" name="Toa Tau nu" id="toa5-nu" class="input-hidden" value="Toa 5" disabled/>
               <label for="toa5-nu"> <img src="assets/img/all/toatau5.jpg" alt="tau5" />  </label>
 
               <input type="radio" name="Toa Tau nu" id="toa6-nu" class="input-hidden" value="Toa 6" />
               <label for="toa6-nu"> <img src="assets/img/all/toatau6.jpg" alt="tau1" />  </label>
 
-              <input type="radio" name="Toa Tau nu" id="toa7-nu" class="input-hidden" value="Toa 7" disabled/>
+              <input type="radio" name="Toa Tau nu" id="toa7-nu" class="input-hidden" value="Toa 7" />
               <label for="toa7-nu"> <img src="assets/img/all/toatau7.jpg" alt="tau2" />  </label>
 
               <input type="radio" name="Toa Tau nu" id="toa8-nu" class="input-hidden" value="Toa 8" />
@@ -633,7 +654,6 @@
             <button id="button-nu" type="submit" class="submit" >Submit</button>
           </form>
         </div>
-
 
 
       </div>
@@ -1011,7 +1031,7 @@
   <script>
     //
 
-    const scriptURLNu = 'https://script.google.com/macros/s/AKfycbxYbQTDypSJaKtRIwasfdN-n8gE9U1OrBLHrAJl05Ygs55CziNPAAFN1SEJi9ML2Eb3SA/exec'
+    const scriptURLNu = 'https://script.google.com/macros/s/AKfycbyxbKjwdFZJpFCU_f7o-ORnu5gwLqpoAP-539JzoRTrX86Jm_OQh5MTBcFs1kxKOZjSoA/exec'
 
     const formNu = document.forms['informations-nu']
 
@@ -1060,7 +1080,7 @@
   </script>
 
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxVCKSKbinotcUly-fRkb55xQw0Qh11uJfUQeLOgacSCJyIy4tZVkayHYXReXVkTdICaw/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyZKzilrgr1cmsydmd1_jc3glemlF6ZIGaFggUAQ3PoQbxQBY1-3ezf47Jm4x6xarJX4Q/exec'
     const formNam = document.forms['informations-nam']
 
     let submitedLoading = false;
@@ -1108,36 +1128,6 @@
     })
 
   </script>
-
-  <!-- Modal  -->
-  <!-- <script>
-    // Get the modal
-    let modal = document.getElementById("myModal");
-    
-    // Get the button that opens the modal
-    let btn = document.getElementById("button-nam");
-    
-    // Get the <span> element that closes the modal
-    let span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-    
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-  </script> -->
-
 
   <!-- insert HTML -->
   <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
